@@ -50,7 +50,7 @@ with st().sidebar:
         type=["pdf", "txt", "docx"],
     )
 
-    st.write(
+    st().write(
         """
         
         Github : https://github.com/acecic82/assignment_nomad_1
