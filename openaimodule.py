@@ -21,7 +21,9 @@ class LLMManager:
     llm = ""
     
     def initLLM(self):
-        print("initLLM")
+        st().write(
+            st().session_state["api_key"]
+        )
         self.llm = ChatOpenAI(
             temperature=0.1,
             streaming=True,
