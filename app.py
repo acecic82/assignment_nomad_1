@@ -43,8 +43,6 @@ Use this chatbot to ask questions to an AI about your files!
 with st().sidebar:
     apiKey = st().text_input("Please set an open ai api key")
     st().session_state["api_key"] = apiKey
-    print("Set the api key")
-    st().write(apiKey)
 
     llmManager.initLLM()
 
