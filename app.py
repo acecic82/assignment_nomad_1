@@ -54,6 +54,7 @@ with st().sidebar:
         """
         
         Github : https://github.com/acecic82/assignment_nomad_1
+        
         app : https://assignmentnomad1-m8ps7km3kzl5lzrnhsetmu.streamlit.app/
 
         """
