@@ -50,6 +50,15 @@ with st().sidebar:
         type=["pdf", "txt", "docx"],
     )
 
+    st.write(
+        """
+        
+        Github : https://github.com/acecic82/assignment_nomad_1
+        app : https://assignmentnomad1-m8ps7km3kzl5lzrnhsetmu.streamlit.app/
+
+        """
+    )
+
 if file:
     retriever = embed_file(file)
     send_message("I'm ready! Ask away!", "ai", save=False)
