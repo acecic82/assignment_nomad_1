@@ -3,3 +3,4 @@ env/
 .cache
 files
 .streamlit
+__pycache__
