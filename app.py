@@ -43,6 +43,7 @@ Use this chatbot to ask questions to an AI about your files!
 with st().sidebar:
     apiKey = st().text_input("Please set an open ai api key")
     st().session_state["api_key"] = apiKey
+    print("Set the api key")
     llmManager.initLLM()
 
     file = st().file_uploader(
@@ -54,7 +55,7 @@ with st().sidebar:
         """
         
         Github : https://github.com/acecic82/assignment_nomad_1
-        
+
         app : https://assignmentnomad1-m8ps7km3kzl5lzrnhsetmu.streamlit.app/
 
         """
