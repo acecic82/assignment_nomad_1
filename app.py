@@ -2,7 +2,7 @@ from stmodule import getSt as st
 
 from file import embed_file
 from openaimodule import LLMManager
-from openai.error import AuthenticationError
+from openai.error import AuthenticationError, RateLimitError
 
 
 st().set_page_config(
@@ -77,6 +77,8 @@ if file:
                 chain.invoke(message)
         except AuthenticationError:
             send_message("Incorrect API key. Please check your API key", "ai")
+        except RateLimitError:
+            send_message("RateLimit error please wait and retry in 20sec", "ai")
         except Exception as e:
             print(e)
         
